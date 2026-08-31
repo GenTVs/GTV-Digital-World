@@ -2,11 +2,14 @@
 
 # GTV Digital World
 
+> *Prototype first. Final art second.*
+
 Legend:
 
 - ✅ Ready
-- 🟡 Needs preparation
+- 🟡 In Progress / Needs Preparation
 - 🔴 Missing
+- ⏳ Intentionally Deferred
 
 ---
 
@@ -14,56 +17,189 @@ Legend:
 
 | Asset | Status | Destination |
 |---|---|---|
-| GTV Gear icon.jpg | ✅ | `public/assets/images/branding/` |
-| GTV [Beta] (icon).gif | ✅ | `public/assets/images/branding/` |
-| GTV New banner.jpg | ✅ | `public/assets/images/branding/` |
-| pfp_01.png | ✅ | `public/assets/images/characters/` |
-| pfp_02.jpg | ✅ | `public/assets/images/backgrounds/` |
+| GTV Gear Icon | ✅ | `public/assets/images/branding/` |
+| GTV Beta Icon | ✅ | `public/assets/images/branding/` |
+| GTV Banner | ✅ | `public/assets/images/branding/` |
+| Main Mascot | ✅ | `public/assets/images/characters/` |
+| Profile Background | ✅ | `public/assets/images/backgrounds/` |
 
 ---
 
 # 🔤 Fonts
 
-| Font | Status |
-|---|---|
-| Nunito | 🟡 |
-| Dosis | 🟡 |
+| Font | Required Weights | Status |
+|---|---|---|
+| Nunito | 400, 600, 700, 800 | ✅ |
+| Dosis | 500, 600, 700 | ✅ |
+
+Fonts are stored locally inside:
+
+```text
+public/assets/fonts/
+├── nunito/
+└── dosis/
+```
 
 ---
 
-# 🌍 World Assets
+# 🎨 Concept Art
 
-| Asset | Status |
+The six high-detail environment illustrations are now **visual references**, not final playable backgrounds.
+
+Location:
+
+```text
+docs/references/concept-art/
+```
+
+| Concept | Status |
 |---|---|
-| Central Hub background | 🔴 |
-| Developer Lab | 🔴 |
-| Community Hall | 🔴 |
-| Arcade | 🔴 |
-| Mission Terminal | 🔴 |
-| Ending / restored world | 🔴 |
+| Central Hub | ✅ |
+| Mission Terminal | ✅ |
+| Developer Lab | ✅ |
+| Community Hall | ✅ |
+| Arcade | ✅ |
+| Ending Restored World | ✅ |
+
+They define mood, color, architecture, lighting, and location identity.
+
+The Ending artwork may later be reused directly as a cinematic illustration.
 
 ---
 
-# 🎨 UI Assets
+# 🧪 Prototype Assets
 
-- [ ] Hologram panels
-- [ ] Navigation icons
-- [ ] Mission icon
-- [ ] Profile icon
-- [ ] Codex icon
-- [ ] Settings icon
-- [ ] Audio icon
-- [ ] XP graphics
-- [ ] Level graphics
-- [ ] Network Fragment
-- [ ] Lock indicator
-- [ ] Completion indicator
+Final pixel art is **not required** before the first playable prototype.
+
+Temporary development assets may be:
+
+- Colored rectangles
+- Simple tiles
+- Basic icons
+- Placeholder player sprite
+- Temporary interaction markers
+
+Required prototype assets:
+
+- [ ] Temporary player sprite
+- [ ] Temporary floor tile
+- [ ] Temporary wall tile
+- [ ] Temporary door
+- [ ] Temporary terminal
+- [ ] Temporary collision object
+
+---
+
+# 🧍 Final Player Assets
+
+- [ ] Idle sprite - down
+- [ ] Idle sprite - up
+- [ ] Idle sprite - left
+- [ ] Idle sprite - right
+- [ ] Walk animation - down
+- [ ] Walk animation - up
+- [ ] Walk animation - left
+- [ ] Walk animation - right
+
+Recommended: use one sprite sheet if practical.
+
+No full character customization is required.
+
+---
+
+# 🧱 Shared World Tiles
+
+- [ ] Floor tile set
+- [ ] Wall tile set
+- [ ] Corners
+- [ ] Door frames
+- [ ] Locked door state
+- [ ] Unlocked door state
+- [ ] Orange pathway / energy line
+- [ ] Cyan holographic tile
+- [ ] Generic terminal
+- [ ] Generic display
+- [ ] Generic furniture
+- [ ] Generic decoration
+- [ ] Shadow / depth tiles
+
+---
+
+# 🌐 Central Hub Assets
+
+- [ ] Hub floor tiles
+- [ ] Central Network Core
+- [ ] Mission Terminal entrance
+- [ ] Developer Lab entrance
+- [ ] Community Hall entrance
+- [ ] Arcade entrance
+- [ ] Locked entrance effects
+- [ ] Restored entrance effects
+- [ ] Hub decorations
+- [ ] Restoration progress visual states
+
+---
+
+# 🎯 Mission Terminal Assets
+
+- [ ] Mission console
+- [ ] Network status display
+- [ ] Sector map display
+- [ ] Control-room decorations
+- [ ] Exit door
+
+---
+
+# 💻 Developer Lab Assets
+
+- [ ] Development terminal
+- [ ] Server rack
+- [ ] Workbench
+- [ ] Hologram Core
+- [ ] Diagnostic panel
+- [ ] Lab decorations
+- [ ] Exit door
+
+---
+
+# 🤝 Community Hall Assets
+
+- [ ] Community board
+- [ ] Communication terminal
+- [ ] Main hologram display
+- [ ] Lounge furniture
+- [ ] Resource terminal
+- [ ] Community decorations
+- [ ] Exit door
+
+---
+
+# 🕹️ Arcade Assets
+
+- [ ] Main Arcade machine
+- [ ] Score display
+- [ ] Arcade decorations
+- [ ] Neon signage
+- [ ] Prize decoration
+- [ ] Exit door
+- [ ] Mini-game graphics
+
+Only **one** Arcade mini-game is required.
+
+---
+
+# 💠 Network Fragment
+
+- [ ] Network Fragment sprite
+- [ ] Collected state / effect
+
+Visual direction:
+
+> A small digital crystal or holographic data shard combining GTV orange and cyan energy.
 
 ---
 
 # 🏆 Achievements
-
-Required:
 
 - [ ] First Login
 - [ ] First Mission
@@ -74,11 +210,53 @@ Required:
 - [ ] Network Restored
 - [ ] Digital Explorer
 
-Additional achievements may be finalized during progression design without exceeding the agreed Version 1.0 scope.
+Recommended visual system: one reusable badge frame with different center symbols.
+
+---
+
+# 🎨 UI Assets
+
+Most UI should be built with HTML, CSS, and SVG instead of large PNG graphics.
+
+Needed:
+
+- [ ] Profile icon
+- [ ] Codex icon
+- [ ] Settings icon
+- [ ] Mission icon
+- [ ] Interaction icon
+- [ ] Lock icon
+- [ ] Completion icon
+- [ ] Achievement badge frame
+
+Prefer CSS / SVG for:
+
+- Hologram panels
+- Borders
+- Buttons
+- XP bars
+- Level indicators
+- Loading bars
+- Notifications
+- Dialogue boxes
+- Scanlines
+- Glow
+- Simple particles
+
+---
+
+# 🎬 Ending Assets
+
+- [x] Restored World concept illustration
+- [ ] Final ending overlay
+- [ ] Final synchronization effects
+- [ ] Credits presentation assets
 
 ---
 
 # 🔊 Audio
+
+Audio selection is intentionally deferred until the visual prototype and gameplay feel are established.
 
 ## Music
 
@@ -89,10 +267,13 @@ Additional achievements may be finalized during progression design without excee
 - [ ] Arcade
 - [ ] Ending
 
+Status: ⏳ Deferred to polish.
+
 ## Sound Effects
 
 - [ ] Click
-- [ ] Hover
+- [ ] Interaction
+- [ ] Door / Portal
 - [ ] Notification
 - [ ] Mission Complete
 - [ ] Achievement Unlock
@@ -100,25 +281,60 @@ Additional achievements may be finalized during progression design without excee
 - [ ] Hologram Activate
 - [ ] Scene Transition
 
+Status: ⏳ Deferred to polish.
+
 ---
 
-# 🎬 Credits Requirement
+# 🧾 Asset Source Tracking
 
 Every third-party asset must record:
 
 - Asset name
+- File name
 - Creator
 - Original source
 - License
 - Attribution requirement
+- Whether it was modified
+- Where it is used
 
-All information is eventually copied into:
+Record these in:
 
-`docs/references/asset-sources.md`
+```text
+docs/references/asset-sources.md
+```
 
-and
+Final acknowledgements are later copied into:
 
-`docs/references/credits.md`
+```text
+docs/references/credits.md
+```
+
+---
+
+# 📌 Asset Production Rule
+
+Do not spend large amounts of time creating final pixel art before the first playable prototype works.
+
+```text
+Temporary Assets
+      ↓
+Movement Prototype
+      ↓
+Collision
+      ↓
+Interaction
+      ↓
+Room Transition
+      ↓
+Loading
+      ↓
+FIRST PLAYABLE
+      ↓
+Final Pixel Art
+      ↓
+Polish
+```
 
 ---
 

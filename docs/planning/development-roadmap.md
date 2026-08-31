@@ -2,7 +2,7 @@
 
 # GTV Digital World
 
-> *From blueprint to release.*
+> *From blueprint to playable world to final release.*
 
 ---
 
@@ -11,10 +11,12 @@
 | Stage | Status |
 |---|---|
 | Concept | ✅ Complete |
-| Blueprint | ✅ Complete |
-| Planning | 🟡 In Progress |
-| Asset Preparation | ⚪ Not Started |
+| Blueprint | ✅ Revised |
+| Planning | ✅ Revised |
+| Concept Art | ✅ Complete |
+| Prototype Preparation | 🟡 In Progress |
 | Development | ⚪ Not Started |
+| Final Asset Production | ⚪ Not Started |
 | Testing | ⚪ Not Started |
 | Polish | ⚪ Not Started |
 | Release | ⚪ Not Started |
@@ -23,7 +25,7 @@
 
 # 🧠 Phase 1 - Blueprint
 
-**Goal:** Define exactly what GTV Digital World is before development begins.
+**Goal:** Define the game before production.
 
 - [x] Blueprint Questionnaire
 - [x] Game Design Document
@@ -33,150 +35,201 @@
 - [x] Game Systems
 - [x] UI Flow
 - [x] Wireframes
+- [x] Revise gameplay presentation to 2D top-down pixel art
+- [x] Add Canvas-based exploration
+- [x] Add room-based world structure
+- [x] Add hybrid loading strategy
 
 ### Result
 
-The complete game concept, player journey, systems, story, world, and UI structure are defined.
+GTV Digital World is defined as a small top-down 2D pixel-art browser adventure with Canvas gameplay and HTML/CSS interface overlays.
 
 ---
 
 # 📋 Phase 2 - Production Planning
 
-**Goal:** Convert the blueprint into an actionable development plan.
+**Goal:** Convert the revised blueprint into an actionable plan.
 
-- [x] Finalize Development Roadmap
-- [x] Finalize Feature Scope
-- [x] Finalize Asset Checklist
-- [x] Finalize TODO Checklist
-- [x] Initialize Dev Journal
-
-### Result
-
-Every required task for Version 1.0 has a defined place in the production pipeline.
+- [x] Development Roadmap
+- [x] Feature Scope
+- [x] Asset Checklist
+- [x] TODO Checklist
+- [x] Dev Journal
 
 ---
 
-# 📦 Phase 3 - Asset Preparation
+# 🎨 Phase 3 - Visual Direction and Prototype Preparation
 
-**Goal:** Prepare all media required by the game before heavy UI development.
+## Existing Assets
 
-## Branding
+- [x] Organize GTV branding
+- [x] Add Nunito
+- [x] Add Dosis
 
-- [ ] GTV Gear icon
-- [ ] GTV Beta icon
-- [ ] GTV banner
+## Concept Art
 
-## Characters
+- [x] Central Hub
+- [x] Mission Terminal
+- [x] Developer Lab
+- [x] Community Hall
+- [x] Arcade
+- [x] Ending Restored World
+- [x] Move concept art to `docs/references/concept-art/`
 
-- [ ] Main mascot
-- [ ] Profile background
+## Prototype Placeholders
 
-## Fonts
+- [ ] Temporary player sprite
+- [ ] Temporary floor tile
+- [ ] Temporary wall tile
+- [ ] Temporary door
+- [ ] Temporary terminal
 
-- [ ] Nunito
-- [ ] Dosis
+### Milestone
 
-## Required New Assets
-
-- [ ] Central Hub artwork
-- [ ] Developer Lab artwork
-- [ ] Community Hall artwork
-- [ ] Arcade artwork
-- [ ] Mission Terminal graphics
-- [ ] Hologram UI elements
-- [ ] Achievement icons
-- [ ] Codex icons
-- [ ] Network Fragment graphic
-- [ ] Ending visuals
-
-## Audio
-
-- [ ] Background music
-- [ ] Button click
-- [ ] Notification
-- [ ] Mission complete
-- [ ] Achievement unlock
-- [ ] Hologram activation
-- [ ] Scene transition
+> **Ready to begin programming without waiting for final pixel art.**
 
 ---
 
 # 🛠️ Phase 4 - Project Foundation
 
-**Goal:** Create the functioning technical foundation.
-
 - [ ] Initialize Vite
-- [ ] Configure project
-- [ ] Connect existing folder structure
-- [ ] Load fonts
-- [ ] Load branding assets
+- [ ] Configure Vite
+- [ ] Verify development server
+- [ ] Connect existing project folders
 - [ ] Create global CSS variables
-- [ ] Create base typography
-- [ ] Create scene architecture
-- [ ] Create state object
-- [ ] Create navigation system
-- [ ] Confirm development server works
+- [ ] Load local fonts
+- [ ] Load branding
+- [ ] Create main HTML structure
+- [ ] Create game Canvas
+- [ ] Configure pixelated Canvas scaling
+- [ ] Create application state
+- [ ] Create game loop
+- [ ] Confirm Canvas renders successfully
 
 ### Milestone
 
-> **First functioning GTV Digital World application**
+> **GTV Digital World boots and displays a working Canvas.**
 
 ---
 
-# 🎬 Phase 5 - Core Scenes
-
-**Goal:** Build every major screen before advanced gameplay systems.
-
-Development order:
-
-1. Welcome Screen
-2. Intro Story
-3. Player Registration
-4. Central Hub
-5. Mission Terminal
-6. Developer Lab
-7. Community Hall
-8. Arcade
-9. Player Profile
-10. Codex
-11. Settings
-12. Ending
-13. Credits
-
-Each scene must support:
-
-- Correct layout
-- Navigation
-- Basic animation
-- Required interaction
-- Scene IDs
-- Back/return behavior
-
----
-
-# ⚙️ Phase 6 - Game Systems
-
-**Goal:** Turn the scenes into an actual game.
+# 🧪 Phase 5 - First Playable Prototype
 
 Implementation order:
 
-1. State Management
-2. Save System
-3. Player Profile System
-4. Navigation System
-5. Mission System
-6. Progression System
-7. Achievement System
-8. Codex System
-9. UI Feedback System
-10. Settings System
-11. Audio System
+1. Input System
+2. Temporary Player
+3. Player Movement
+4. Delta Time
+5. Temporary Room
+6. Collision
+7. Interaction Range
+8. Interaction Prompt
+9. Interactive Terminal
+10. Door / Exit
+11. Second Temporary Room
+12. Room Transition
+13. Fade Transition
+14. Asset Loader
+15. Loading Overlay
+
+### First Playable Requirements
+
+- [ ] Move with WASD / Arrow Keys
+- [ ] Collide with walls
+- [ ] Approach a terminal
+- [ ] Press `E` to interact
+- [ ] Open an HTML/CSS interface
+- [ ] Approach a door
+- [ ] Transition to another room
+- [ ] See a loading screen if required
+- [ ] Return to the original room
+
+### Milestone
+
+> **FIRST PLAYABLE PROTOTYPE**
 
 ---
 
-# 🎯 Phase 7 - Missions and Progression
+# ⚙️ Phase 6 - Core Game Architecture
 
-**Goal:** Implement the complete playable story.
+- [ ] Input System
+- [ ] Rendering System
+- [ ] Player Movement System
+- [ ] Collision System
+- [ ] Room / Map System
+- [ ] Interaction System
+- [ ] Transition System
+- [ ] Asset Loading System
+- [ ] State Management
+- [ ] Save System
+- [ ] Player Profile System
+- [ ] Mission System
+- [ ] Progression System
+- [ ] Achievement System
+- [ ] Codex System
+- [ ] UI Feedback System
+- [ ] Settings System
+- [ ] Audio System foundation
+
+---
+
+# 🎨 Phase 7 - Final Pixel-Art Asset Production
+
+## Player
+
+- [ ] Final Digital Explorer sprites
+- [ ] Idle animations
+- [ ] Walking animations
+
+## Shared World
+
+- [ ] Floor tiles
+- [ ] Wall tiles
+- [ ] Doors
+- [ ] Terminals
+- [ ] Shared decorations
+- [ ] Holographic objects
+
+## Locations
+
+- [ ] Central Hub tiles / objects
+- [ ] Mission Terminal tiles / objects
+- [ ] Developer Lab tiles / objects
+- [ ] Community Hall tiles / objects
+- [ ] Arcade tiles / objects
+
+## Progression Graphics
+
+- [ ] Network Fragment
+- [ ] Achievement badges
+- [ ] Icons
+
+---
+
+# 🌐 Phase 8 - Build Final Rooms
+
+Development order:
+
+1. Central Hub
+2. Mission Terminal
+3. Developer Lab
+4. Community Hall
+5. Arcade
+
+Each room must include:
+
+- [ ] Tile layout
+- [ ] Collision
+- [ ] Spawn points
+- [ ] Interactive objects
+- [ ] Entrances / exits
+- [ ] Mission hooks
+- [ ] Location loading bundle
+- [ ] Final decoration
+
+---
+
+# 🎯 Phase 9 - Missions and Story Progression
 
 - [ ] Mission 1 - Establish Connection
 - [ ] Mission 2 - Activate Mission Terminal
@@ -186,51 +239,65 @@ Implementation order:
 - [ ] Mission 6 - Recover Knowledge Archive
 - [ ] Mission 7 - Prepare Core Synchronization
 - [ ] Mission 8 - Restore GTV Network
-
-Then:
-
 - [ ] XP rewards
 - [ ] Level progression
-- [ ] Maximum Level 10
+- [ ] Level 10 cap
 - [ ] Network restoration percentage
 - [ ] Network Fragments
 - [ ] Location unlocking
+- [ ] Hub restoration visual states
+- [ ] Ending unlock
 
 ---
 
-# 🏆 Phase 8 - Secondary Systems
+# 🖥️ Phase 10 - Interface Systems
 
-**Goal:** Complete supporting gameplay.
-
-- [ ] Achievements
-- [ ] Codex entries
-- [ ] Player statistics
-- [ ] Arcade mini-game
+- [ ] Gameplay HUD
+- [ ] Mission overlay
+- [ ] Dialogue system
+- [ ] Profile overlay
+- [ ] Codex overlay
+- [ ] Settings overlay
+- [ ] Interaction prompt
+- [ ] Loading screens
 - [ ] Notifications
-- [ ] Profile completion
-- [ ] Post-game state
+- [ ] Achievement popup
+- [ ] Level-up feedback
+
+Most interface styling should be created with HTML/CSS/SVG.
 
 ---
 
-# ✨ Phase 9 - Visual and Audio Polish
+# 🕹️ Phase 11 - Arcade Mini-Game
 
-**Goal:** Transform the functional game into the final experience.
+- [ ] Finalize mini-game rules
+- [ ] Build mini-game
+- [ ] Add score / result
+- [ ] Add retry behavior
+- [ ] Connect mission completion
+- [ ] Connect XP reward
+- [ ] Connect achievement
 
-- [ ] Holographic animations
-- [ ] Scene transitions
-- [ ] Background movement
-- [ ] UI hover feedback
-- [ ] Loading feedback
-- [ ] Mission completion animation
-- [ ] Achievement animation
-- [ ] Network restoration effects
-- [ ] Ending sequence
-- [ ] Music
+---
+
+# ✨ Phase 12 - Visual and Audio Polish
+
+- [ ] Holographic CSS effects
+- [ ] Scene fades
+- [ ] Pixel-art animations
+- [ ] Hub restoration effects
+- [ ] Button effects
+- [ ] Notifications
+- [ ] Mission completion effects
+- [ ] Achievement effects
+- [ ] Ending synchronization
+- [ ] Background music
 - [ ] Sound effects
+- [ ] Audio balancing
 
 ---
 
-# 📱 Phase 10 - Responsive Support
+# 📱 Phase 13 - Responsive Support
 
 Priority:
 
@@ -238,23 +305,26 @@ Priority:
 2. Tablet
 3. Mobile
 
-Tasks:
-
 - [ ] Desktop final layout
+- [ ] Canvas scaling
 - [ ] Tablet adaptation
 - [ ] Mobile basic support
-- [ ] Navigation resizing
+- [ ] Touch controls
 - [ ] Text scaling
-- [ ] Touch-friendly controls
+- [ ] Menu resizing
 
 ---
 
-# 🧪 Phase 11 - Testing
+# 🧪 Phase 14 - Testing
 
-Test:
-
-- [ ] New game
+- [ ] Fresh game
 - [ ] Full playthrough
+- [ ] Player movement
+- [ ] Collision
+- [ ] Interaction
+- [ ] Room transitions
+- [ ] Asset loading
+- [ ] Background preloading
 - [ ] Save
 - [ ] Reload
 - [ ] Reset
@@ -263,7 +333,7 @@ Test:
 - [ ] Level cap
 - [ ] Achievements
 - [ ] Codex
-- [ ] Locked locations
+- [ ] Locked rooms
 - [ ] Arcade
 - [ ] Settings
 - [ ] Audio
@@ -276,47 +346,57 @@ Test:
 
 All discovered problems go into:
 
-`docs/testing/bug-log.md`
+```text
+docs/testing/bug-log.md
+```
 
 ---
 
-# 🚀 Phase 12 - Release
+# 🚀 Phase 15 - Release
 
 - [ ] Final bug review
 - [ ] Final credits
 - [ ] Final asset attribution
 - [ ] README
 - [ ] Screenshots
+- [ ] Production build
 - [ ] GitHub Pages deployment
-- [ ] Production test
-- [ ] Tag Version 1.0.0
+- [ ] Test deployed build
+- [ ] Version 1.0 release review
+- [ ] Tag `v1.0.0`
 - [ ] Final release commit
 
 ---
 
-# 🏁 Final State
+# 🏁 Final Development Flow
 
 ```text
 Blueprint
-   ↓
+    ↓
 Planning
-   ↓
-Assets
-   ↓
-Foundation
-   ↓
-Scenes
-   ↓
-Systems
-   ↓
-Gameplay
-   ↓
+    ↓
+Concept Art
+    ↓
+Prototype
+    ↓
+Core Systems
+    ↓
+Final Pixel Art
+    ↓
+Playable Rooms
+    ↓
+Missions
+    ↓
+Interface
+    ↓
+Arcade
+    ↓
 Polish
-   ↓
+    ↓
 Testing
-   ↓
+    ↓
 Release
-   ↓
+    ↓
 GTV Digital World v1.0.0
 ```
 

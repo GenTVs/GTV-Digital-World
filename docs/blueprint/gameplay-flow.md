@@ -2,22 +2,33 @@
 
 # GTV Digital World
 
----
-
-# Overview
-
-Gameplay Flow describes the complete player journey from launching the game until reaching the ending.
-
-The goal is to ensure every action has a clear purpose and every system naturally introduces the next one.
-
-The experience should feel smooth, focused, and rewarding.
+> *Move. Explore. Interact. Restore.*
 
 ---
 
-# Complete Gameplay Flow
+# 📋 Overview
 
-```
+Gameplay Flow describes the complete player journey from launching the game to restoring the GTV Network.
+
+The new gameplay presentation uses a top-down controllable Digital Explorer inside small room-based maps.
+
+The core experience combines:
+
+- Movement
+- Exploration
+- Interaction
+- Missions
+- Rewards
+- Story progression
+
+---
+
+# 🚀 Complete Gameplay Flow
+
+```text
 Launch Game
+    ↓
+Initial Loading
     ↓
 Welcome Screen
     ↓
@@ -29,27 +40,31 @@ Intro Story
     ↓
 Enter Player Name
     ↓
-Central Hub
+Load Central Hub
     ↓
-Mission Terminal
+Learn Movement
     ↓
-Mission 1
+Walk to Mission Terminal
     ↓
-Developer Lab
+Enter Mission Terminal
     ↓
-Mission 2
+Receive Mission
     ↓
-Community Hall
+Return to Hub
     ↓
-Mission 3
+Walk to Unlocked Sector
     ↓
-Arcade
+Enter Sector
     ↓
-Mission 4
+Explore + Interact
     ↓
-Codex
+Complete Objective
     ↓
-Mission 5
+Receive Rewards
+    ↓
+Return to Hub
+    ↓
+Repeat Mission Cycle
     ↓
 Final Synchronization
     ↓
@@ -60,14 +75,18 @@ Credits
 
 ---
 
-# Gameplay Loop
+# 🔄 Core Gameplay Loop
 
-The core gameplay loop repeats throughout the game.
-
-```
+```text
 Receive Mission
       ↓
-Explore Location
+Walk to Destination
+      ↓
+Load Location
+      ↓
+Explore Room
+      ↓
+Find Interactive Object
       ↓
 Interact
       ↓
@@ -82,229 +101,384 @@ Return to Hub
 Next Mission
 ```
 
-Every mission follows this structure.
+---
+
+# 🕹️ Core Player Actions
+
+## Movement
+
+Players can:
+
+- Walk up
+- Walk down
+- Walk left
+- Walk right
+
+Desktop controls:
+
+```text
+W / ↑ - Up
+A / ← - Left
+S / ↓ - Down
+D / → - Right
+```
+
+## Interaction
+
+When the player is near an interactive object:
+
+```text
+[E] Interact
+```
+
+Possible interactive objects include:
+
+- Doors
+- Terminals
+- Holograms
+- Consoles
+- Arcade machines
+- Network Fragments
+- Story objects
 
 ---
 
-# Player Journey
+# 🧭 Player Journey
 
-## Step 1 - Welcome
+## Step 1 - Initial Loading
 
-Purpose
+Purpose:
 
-Introduce the game's visual identity.
+Prepare the minimum assets required to begin.
 
-Player Actions
+Loads:
+
+- Fonts
+- Shared UI
+- Player sprite
+- Shared tiles
+- Central Hub assets
+
+When ready:
+
+```text
+Loading Complete
+    ↓
+Fade In
+    ↓
+Welcome Screen
+```
+
+---
+
+## Step 2 - Welcome
+
+Player Actions:
 
 - Start Game
 - Settings
 - Credits
 
-Reward
+Reward:
 
-None
+None.
 
 ---
 
-## Step 2 - Story Introduction
+## Step 3 - Story Introduction
 
-Purpose
+Purpose:
 
 Explain the inactive GTV Network.
 
-Player Actions
+Player Actions:
 
 - Read dialogue
 - Continue
 
-Reward
+Reward:
 
 Access to Player Registration.
 
 ---
 
-## Step 3 - Player Registration
+## Step 4 - Player Registration
 
-Purpose
+Purpose:
 
 Personalize the experience.
 
-Player Actions
+Player Actions:
 
 - Enter display name
+- Confirm
 
-Reward
+Reward:
 
 Digital Explorer profile created.
 
 ---
 
-## Step 4 - Central Hub
+## Step 5 - Central Hub Introduction
 
-Purpose
+Purpose:
 
-Introduce the world.
+Teach basic movement and introduce the physical world.
 
-Player Actions
+Player Actions:
 
-- View unlocked locations
-- Open Mission Terminal
-- View Profile
+- Move around
+- Approach the Mission Terminal entrance
+- Learn interaction prompt
 
-Reward
+Reward:
 
-Mission system unlocked.
+Mission Terminal access.
 
 ---
 
-## Step 5 - Mission Cycle
+# 🎯 Main Mission Progression
 
-Every mission follows the same structure.
+The story contains 8 main missions.
 
+| # | Mission | Primary Goal |
+|---|---|---|
+| 1 | Establish Connection | Enter the GTV Network |
+| 2 | Activate Mission Terminal | Restore mission access |
+| 3 | Restore Developer Lab | Restore development systems |
+| 4 | Reconnect Community Hall | Restore communication |
+| 5 | Reactivate Arcade | Restore entertainment systems |
+| 6 | Recover Knowledge Archive | Restore Codex knowledge |
+| 7 | Prepare Core Synchronization | Prepare all sectors |
+| 8 | Restore GTV Network | Complete final synchronization |
+
+---
+
+# 🧩 Mission Cycle
+
+Each main mission should follow a recognizable rhythm.
+
+```text
 Mission Accepted
+    ↓
+Destination Marked
+    ↓
+Travel Through Hub
+    ↓
+Enter Sector
+    ↓
+Explore
+    ↓
+Interact
+    ↓
+Complete Challenge
+    ↓
+Mission Complete
+    ↓
+XP + Reward
+    ↓
+Save Progress
+    ↓
+Return to Hub
+```
 
-↓
-
-Travel
-
-↓
-
-Interaction
-
-↓
-
-Completion
-
-↓
-
-Reward
-
-↓
-
-Hub
-
-↓
-
-Next Mission
-
-This creates a consistent rhythm for the player.
+The exact challenge may change between missions, but the overall rhythm should remain understandable.
 
 ---
 
-# Rewards
+# 📦 Location Loading Flow
+
+When moving between rooms:
+
+```text
+Player Interacts With Door
+        ↓
+Lock Player Controls
+        ↓
+Fade Out
+        ↓
+Check Asset Bundle
+        ↓
+Already Loaded?
+   ┌────┴────┐
+  Yes        No
+   │          │
+   │      Loading Overlay
+   │          │
+   │      Load Assets
+   │          │
+   └────┬─────┘
+        ↓
+Create Room
+        ↓
+Place Player
+        ↓
+Fade In
+        ↓
+Restore Controls
+```
+
+Rooms should not visibly appear piece by piece.
+
+---
+
+# ⚡ Background Preloading
+
+Whenever practical, the game may preload likely next locations while the player explores the current room.
+
+Example:
+
+```text
+Player accepts Developer Lab mission
+        ↓
+Developer Lab bundle begins loading quietly
+        ↓
+Player walks back through Hub
+        ↓
+Developer Lab is already ready when entered
+```
+
+This reduces visible loading time.
+
+---
+
+# 🎁 Rewards
 
 Players may receive:
 
 - XP
+- Levels
 - Achievements
 - Network Fragments
 - Codex Entries
 - New Locations
 - Story Progress
+- Network Restoration
 
-Rewards should always feel meaningful.
+Every important reward should provide immediate feedback.
 
 ---
 
-# Unlock Progression
+# 📈 Unlock Progression
 
-```
+```text
 Mission Complete
         ↓
 XP
         ↓
+Level Progress
+        ↓
 Network Restoration
         ↓
-New Location
+New Sector / New Objective
         ↓
-New Mission
+Save
         ↓
-Repeat
+Continue
 ```
-
-The player should always know why something was unlocked.
 
 ---
 
-# Failure States
+# 💾 Save Flow
 
-The game has no traditional "Game Over."
+Important progress should save automatically after:
+
+- Mission completion
+- Level increase
+- Location unlock
+- Achievement unlock
+- Codex unlock
+- Settings change
+- Final synchronization
+
+Players should not lose meaningful progress after refreshing the browser.
+
+---
+
+# ❌ Failure States
+
+There is no traditional Game Over.
 
 Instead:
 
-- Missions may remain incomplete.
-- Locked sectors remain inaccessible.
-- Progress simply pauses until the objective is completed.
+- Incomplete missions remain active
+- Locked sectors remain locked
+- Mini-games may be retried
+- Challenges may be attempted again
+- Story progress waits until the objective is complete
 
-This creates a relaxed experience.
+The experience should remain relaxed and approachable.
 
 ---
 
-# Completion Conditions
+# 🏁 Completion Conditions
 
 The game is completed when the player has:
 
-- Finished all main missions
-- Restored every sector
+- Finished all 8 main missions
+- Restored all required sectors
 - Reached Level 10
-- Completed the final synchronization
-- Viewed the ending
+- Completed Core Synchronization
+- Restored the network to 100%
+- Reached the ending
 - Viewed the credits
 
-Optional achievements are not required for completion.
+Optional achievements are not required for story completion.
 
 ---
 
-# Replayability
+# 🔁 Post-Game
 
 After finishing the story, players may:
 
+- Revisit unlocked rooms
+- Walk around the restored Hub
 - Replay the Arcade mini-game
-- Revisit every location
 - Review Codex entries
 - Review achievements
+- View the completed profile
 - Change settings
-- Watch the ending again
+- Replay the ending
 
-Story progression remains complete.
-
----
-
-# Player Feedback
-
-The player should always receive immediate feedback after an important action.
-
-Examples include:
-
-- XP gained
-- Mission complete
-- Achievement unlocked
-- Network restored
-- New location unlocked
-- Codex entry unlocked
-
-Visual and audio feedback should reinforce progression.
+No additional story chapter unlocks.
 
 ---
 
-# Gameplay Design Rules
+# 🔔 Player Feedback
 
-1. Every mission should introduce or reinforce one gameplay concept.
-2. Every completed mission must unlock meaningful progression.
-3. The player should never become lost.
-4. Every interaction should provide immediate feedback.
-5. Exploration should always feel rewarding.
-6. The gameplay loop should remain simple and consistent.
-7. The ending should feel earned.
+Feedback examples:
 
----
+- `+200 XP`
+- `Mission Complete`
+- `Achievement Unlocked`
+- `Codex Entry Added`
+- `Sector Restored`
+- `Level Up`
+- `Network 75% Restored`
 
-# Final Gameplay Summary
-
-The player begins by entering the inactive GTV Network, completes a sequence of restoration missions, unlocks new locations, restores disconnected sectors, and gradually returns the world to full operation.
-
-Every mission advances both gameplay and story, creating a focused progression from beginning to end without unnecessary complexity.
+Feedback should be visual, readable, and short.
 
 ---
 
-End of Gameplay Flow
+# 📌 Gameplay Design Rules
+
+1. Movement should feel responsive.
+2. Every room should contain meaningful interactions.
+3. The player should always understand the next objective.
+4. Locked areas should clearly communicate why they are locked.
+5. Loading should never reveal a partially assembled room.
+6. Every mission should produce meaningful progression.
+7. Exploration should remain compact and focused.
+8. The ending should feel earned.
+
+---
+
+# 🏁 Final Gameplay Summary
+
+The player enters the inactive GTV Network as a Digital Explorer, learns to move through the Central Hub, visits connected sectors, completes restoration missions, unlocks new systems, gains XP, collects Network Fragments, and gradually returns the world to full operation.
+
+The game combines lightweight top-down exploration with modern browser UI systems to create a short but complete web adventure.
+
+---
+
+**End of Gameplay Flow**

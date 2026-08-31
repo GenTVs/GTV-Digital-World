@@ -8,18 +8,36 @@
 
 # 📋 Overview
 
-These wireframes are simple ASCII sketches.
+These wireframes define the structural layout of the revised top-down pixel-art browser game.
 
-Their purpose is **not** to define visual style.
+They show:
 
-Instead, they define:
+- Gameplay viewport
+- HUD placement
+- Room layout
+- Menus
+- Loading screens
+- Interaction prompts
 
-- Layout
-- Screen hierarchy
-- Navigation
-- Major UI elements
+They do not define final art quality.
 
-Final visuals may change during development.
+---
+
+# ⏳ Initial Loading
+
+```text
++------------------------------------------------------+
+|                                                      |
+|                    GTV LOGO                          |
+|                                                      |
+|               GTV DIGITAL WORLD                      |
+|                                                      |
+|              Initializing Network...                 |
+|                                                      |
+|              [████████████░░░░] 72%                  |
+|                                                      |
++------------------------------------------------------+
+```
 
 ---
 
@@ -47,14 +65,13 @@ Final visuals may change during development.
 ```text
 +------------------------------------------------------+
 |                                                      |
-|                Holographic Dialogue                  |
+|                 STORY VISUAL                         |
 |                                                      |
-| "Unknown connection detected..."                     |
 |                                                      |
-| "Initializing Core Terminal..."                      |
-|                                                      |
-|                 [ Continue ]                         |
-|                                                      |
+|------------------------------------------------------|
+| CORE TERMINAL                                        |
+| Unknown connection detected...                       |
+|                                      [ Continue ]    |
 +------------------------------------------------------+
 ```
 
@@ -64,6 +81,8 @@ Final visuals may change during development.
 
 ```text
 +------------------------------------------------------+
+|                                                      |
+|               DIGITAL EXPLORER                       |
 |                                                      |
 |              Enter Explorer Name                     |
 |                                                      |
@@ -76,140 +95,284 @@ Final visuals may change during development.
 
 ---
 
-# 🌐 Central Hub
+# 🌐 Central Hub - Gameplay
 
 ```text
 +------------------------------------------------------+
-| GTV LOGO                              Level 4        |
-+------------------------------------------------------+
+| GTV | Mission: Visit Terminal    Network 10% | Lv 1 |
+|------------------------------------------------------|
 |                                                      |
-|                [ Developer Lab ]                     |
-|                       ▲                              |
-|                       │                              |
-| [ Community Hall ] HUB [ Mission Terminal ]          |
-|                       │                              |
-|                       ▼                              |
-|                   [ Arcade ]                         |
+|        [ Developer Lab - LOCKED ]                    |
+|                     █████                            |
 |                                                      |
+| [Mission Terminal]       ◉ HUB       [Community]     |
+|        ███              @Player          ███         |
+|                                                      |
+|                    [ Arcade ]                        |
+|                       ███                            |
+|                                                      |
+|------------------------------------------------------|
+| [Profile] [Codex]       [E] Interact       [Settings]|
 +------------------------------------------------------+
-| Profile | Codex | Settings | Audio                  |
+```
+
+`@Player` represents the controllable Digital Explorer.
+
+---
+
+# 🎯 Mission Terminal - Gameplay
+
+```text
++------------------------------------------------------+
+| GTV | Mission Terminal           Network 10% | Lv 1 |
+|------------------------------------------------------|
+|                                                      |
+|   [Status Screen]                                    |
+|                                                      |
+|                     @Player                          |
+|                        ↓                             |
+|                  [MISSION CONSOLE]                   |
+|                                                      |
+|       [Exit Door -> Central Hub]                     |
+|                                                      |
+|------------------------------------------------------|
+| [Profile] [Codex]       [E] Interact       [Settings]|
 +------------------------------------------------------+
 ```
 
 ---
 
-# 🎯 Mission Terminal
+# 🎯 Mission Overlay
 
 ```text
 +------------------------------------------------------+
-| Current Mission                                      |
 |                                                      |
-| Restore Developer Lab                               |
+|               CURRENT MISSION                        |
 |                                                      |
-| Reward: 200 XP                                       |
+|              Restore Developer Lab                   |
 |                                                      |
-| Progress: 25%                                        |
+| Objective                                            |
+| Activate the Development Core.                       |
 |                                                      |
-| [ Accept ]      [ Return ]                           |
+| Reward: 200 XP + Network Fragment                    |
+|                                                      |
+|          [ Accept ]        [ Close ]                 |
+|                                                      |
 +------------------------------------------------------+
 ```
 
 ---
 
-# 💻 Developer Lab
+# 💻 Developer Lab - Gameplay
 
 ```text
 +------------------------------------------------------+
-|                Developer Lab                         |
+| GTV | Developer Lab              Network 25% | Lv 3 |
+|------------------------------------------------------|
+| [Servers]                              [Terminal]     |
+|   ████                                    ███        |
 |                                                      |
-|      Interactive Challenge Area                      |
+|                [Hologram Core]                       |
+|                      ◉                               |
 |                                                      |
-|          [ Start Mission ]                           |
+|              @Player                                 |
 |                                                      |
-|              [ Return ]                              |
+| [Workbench]                     [Exit -> Hub]         |
+|------------------------------------------------------|
+| [Profile] [Codex]       [E] Interact       [Settings]|
 +------------------------------------------------------+
 ```
 
 ---
 
-# 🤝 Community Hall
+# 🤝 Community Hall - Gameplay
 
 ```text
 +------------------------------------------------------+
-|               Community Hall                         |
+| GTV | Community Hall             Network 45% | Lv 5 |
+|------------------------------------------------------|
+| [Community Board]                  [Resources]        |
+|       ███                              ███            |
 |                                                      |
-|       Community Information Panel                    |
+|                 [Main Display]                       |
+|                      ◉                               |
 |                                                      |
-|             [ Explore ]                              |
+|              @Player                                 |
 |                                                      |
-|              [ Return ]                              |
+| [Lounge]                    [Communication Terminal] |
+|------------------------------------------------------|
+| [Profile] [Codex]       [E] Interact       [Settings]|
 +------------------------------------------------------+
 ```
 
 ---
 
-# 🕹️ Arcade
+# 🕹️ Arcade - Gameplay
 
 ```text
 +------------------------------------------------------+
-|                    Arcade                            |
+| GTV | Arcade                     Network 65% | Lv 7 |
+|------------------------------------------------------|
 |                                                      |
-|             Mini-game Preview                        |
+| [Decoration]     [MAIN ARCADE MACHINE]    [Scores]   |
+|                       █████                          |
 |                                                      |
-|               [ Play ]                               |
+|                      @Player                         |
 |                                                      |
-|             [ Return ]                               |
+|                                                      |
+|                 [Exit -> Hub]                        |
+|                                                      |
+|------------------------------------------------------|
+| [Profile] [Codex]       [E] Play           [Settings]|
 +------------------------------------------------------+
 ```
 
 ---
 
-# 👤 Profile
+# 👤 Profile Overlay
 
 ```text
 +------------------------------------------------------+
-| Player Name                                          |
+| PLAYER PROFILE                                   [X] |
+|------------------------------------------------------|
+| Player: Digital Explorer                             |
 |                                                      |
 | Level 6                                              |
 | XP: ███████░░░                                       |
 |                                                      |
-| Achievements: 7 / 10                                 |
+| Network Restored: 55%                                |
+| Missions: 4 / 8                                      |
+| Achievements: 5 / 8                                  |
 |                                                      |
-| [ Return ]                                           |
 +------------------------------------------------------+
 ```
 
 ---
 
-# 📖 Codex
+# 📖 Codex Overlay
 
 ```text
 +------------------------------------------------------+
-| Categories                                            |
-|                                                      |
-| - Technologies                                       |
-| - Locations                                          |
-| - Story                                              |
-| - Community                                           |
-|                                                      |
-| [ Open ]      [ Return ]                             |
+| CODEX                                            [X] |
+|------------------------------------------------------|
+| Categories            | Entry                        |
+|                       |                              |
+| > Technologies        | JavaScript                   |
+|   Locations           |                              |
+|   Story               | Description...               |
+|   Community           |                              |
+|   Development         |                              |
+|                       |                              |
 +------------------------------------------------------+
 ```
 
 ---
 
-# ⚙️ Settings
+# ⚙️ Settings Overlay
 
 ```text
 +------------------------------------------------------+
-| Settings                                             |
+| SETTINGS                                         [X] |
+|------------------------------------------------------|
 |                                                      |
-| Music Volume     [=====----]                         |
-| Sound Volume     [=======--]                         |
+| Master Volume     [=======---]                       |
+| Music Volume      [======----]                       |
+| Sound Volume      [========--]                       |
+|                                                      |
+| Controls                                             |
+| WASD / Arrows - Move                                 |
+| E - Interact                                         |
 |                                                      |
 | [ Reset Save ]                                       |
+| [ Return to Title ]                                  |
 |                                                      |
-| [ Return ]                                           |
++------------------------------------------------------+
+```
+
+---
+
+# 💬 Dialogue
+
+```text
++------------------------------------------------------+
+|                    GAME WORLD                        |
+|                                                      |
+|                       @Player                        |
+|                                                      |
+|------------------------------------------------------|
+| CORE TERMINAL                                        |
+| Developer Sector detected.                           |
+| Connection status: OFFLINE.              [Continue] |
++------------------------------------------------------+
+```
+
+---
+
+# 🔔 Notification
+
+```text
+                                  +-------------------+
+                                  | MISSION COMPLETE  |
+                                  | +200 XP           |
+                                  +-------------------+
+```
+
+Notifications appear over gameplay without opening a full menu.
+
+---
+
+# 📦 Sector Loading
+
+```text
++------------------------------------------------------+
+|                                                      |
+|              CONNECTING TO SECTOR                    |
+|                                                      |
+|                 Developer Lab                        |
+|                                                      |
+|              [██████████████░░] 84%                  |
+|                                                      |
+|                 Loading Assets...                    |
+|                                                      |
++------------------------------------------------------+
+```
+
+---
+
+# 📱 Basic Mobile Layout
+
+```text
++------------------------------------------------------+
+|                 GAME CANVAS                          |
+|                                                      |
+|                     @Player                          |
+|                                                      |
+|                                                      |
+|------------------------------------------------------|
+|      [▲]                              [Interact]     |
+| [◄]  [▼]  [►]                         [Menu]         |
++------------------------------------------------------+
+```
+
+Desktop remains the primary target.
+
+---
+
+# 🌟 Final Synchronization
+
+```text
++------------------------------------------------------+
+|                                                      |
+|              CORE SYNCHRONIZATION                    |
+|                                                      |
+| Developer Sector ........ CONNECTED                  |
+| Community Sector ........ CONNECTED                  |
+| Entertainment ........... CONNECTED                  |
+| Knowledge Archive ....... CONNECTED                  |
+|                                                      |
+|              [████████████████████]                  |
+|                      100%                            |
+|                                                      |
 +------------------------------------------------------+
 ```
 
@@ -220,13 +383,14 @@ Final visuals may change during development.
 ```text
 +------------------------------------------------------+
 |                                                      |
-|          GTV NETWORK RESTORED                        |
+|              RESTORED WORLD VISUAL                   |
 |                                                      |
-|      Congratulations, Digital Explorer!              |
+|              GTV NETWORK RESTORED                    |
 |                                                      |
-|             Network Status: 100%                     |
+|       Congratulations, Digital Explorer!             |
 |                                                      |
-|             [ Continue ]                             |
+|                 [ Continue ]                         |
+|                                                      |
 +------------------------------------------------------+
 ```
 
@@ -236,16 +400,13 @@ Final visuals may change during development.
 
 ```text
 +------------------------------------------------------+
-|                    Credits                           |
+|                    CREDITS                           |
 |                                                      |
 | Project Lead                                         |
-| Yuergen Christian                                    |
-|                                                      |
-| Technical Designer                                   |
-| OpenAI ChatGPT                                       |
-|                                                      |
+| Development                                          |
 | Asset Sources                                        |
 | Fonts                                                |
+| Music                                                |
 | Libraries                                            |
 | Special Thanks                                       |
 |                                                      |
@@ -257,19 +418,23 @@ Final visuals may change during development.
 
 # 📌 Wireframe Rules
 
-- Layout before visuals.
-- Structure before styling.
+- Gameplay world first.
+- UI overlays only when needed.
+- Keep the HUD compact.
+- Room layouts should remain readable.
+- Important interactive objects should stand out.
+- Loading hides incomplete room construction.
+- Desktop is the primary layout.
+- Mobile controls remain simplified.
 - Function before decoration.
-- Keep navigation predictable.
-- Every screen must have a clear primary purpose.
 
 ---
 
 # 🏁 Final Summary
 
-These wireframes provide a structural blueprint for every major screen in GTV Digital World.
+These wireframes define GTV Digital World as a top-down pixel-art browser adventure.
 
-They serve as the bridge between documentation and implementation, allowing development to begin with a clear layout for each scene.
+The player moves inside Canvas-rendered rooms while HTML/CSS handles HUD elements, dialogue, menus, loading screens, and information systems.
 
 ---
 

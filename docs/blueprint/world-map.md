@@ -2,322 +2,422 @@
 
 # GTV Digital World
 
+> *A small world should still feel worth exploring.*
+
 ---
 
-# World Overview
+# 🌐 World Overview
 
 GTV Digital World is a futuristic digital universe built around the GTV Network.
 
-Every location represents one important function of the network.
+The world is divided into a small number of handcrafted playable maps rather than one giant open world.
 
-As the player restores each sector, the world gradually becomes fully operational again.
+Players physically move through each map using a top-down Digital Explorer character.
 
-The world is designed around meaningful progression rather than free exploration.
-
-New locations unlock naturally through story progression and completed missions.
+New sectors unlock through story progression and completed missions.
 
 ---
 
-# World Structure
+# 🗺️ World Structure
 
-```
-Welcome Screen
-        │
-        ▼
-Intro Story
-        │
-        ▼
-Central Hub
-        │
- ┌──────┼──────────────┐
- │      │              │
- ▼      ▼              ▼
-Mission Developer   Community
-Terminal   Lab         Hall
- │
- ▼
-Arcade
- │
- ▼
-Player Profile
- │
- ▼
-Codex
- │
- ▼
-Settings
- │
- ▼
-Ending
- │
- ▼
-Credits
+```text
+                         Developer Lab
+                              ▲
+                              │
+                              │
+Mission Terminal ◄────── Central Hub ──────► Community Hall
+                              │
+                              │
+                              ▼
+                            Arcade
 ```
 
----
+The **Central Hub** connects every major playable location.
 
-# 1. Welcome Screen
-
-Purpose
-
-Introduce the game and establish the visual identity.
-
-Player Actions
-
-- Start Game
-- Settings
-- Credits
-
-Unlock Requirement
-
-Always available.
+Profile, Codex, and Settings are interface systems and do not exist as physical rooms.
 
 ---
 
-# 2. Intro Story
+# 🎮 Playable World Rules
 
-Purpose
+Each playable location should:
 
-Explain why the GTV Network has become inactive.
+- Be small enough to understand quickly
+- Contain meaningful interactive objects
+- Have clear collision boundaries
+- Have at least one entrance / exit
+- Support one or more missions
+- Contain visual storytelling
+- Use reusable pixel-art assets
+- Avoid unnecessary empty space
 
-Player Actions
-
-- Read story dialogue
-- Continue
-
-Unlock Requirement
-
-Immediately after pressing Start.
-
----
-
-# 3. Central Hub
-
-Purpose
-
-The heart of GTV Digital World.
-
-Every major location is accessed from here.
-
-Player Actions
-
-- Navigate
-- Accept missions
-- View unlocked sectors
-
-Unlock Requirement
-
-Complete Intro Story.
+The goal is exploration, not map size.
 
 ---
 
-# 4. Mission Terminal
+# 🧍 Player Movement
 
-Purpose
+The player controls a visible **Digital Explorer**.
 
-Display current objectives and player progression.
+Primary movement:
 
-Player Actions
+- WASD
+- Arrow Keys
 
-- View active missions
-- Claim rewards
-- Track completion
+Interaction:
 
-Unlock Requirement
+- E
+- Enter
 
-Unlocked after entering the Central Hub.
+The player may:
+
+- Walk
+- Stop
+- Face interactive objects
+- Use doors
+- Activate terminals
+- Inspect objects
+- Trigger dialogue
+
+No jumping or combat is required.
 
 ---
 
-# 5. Developer Lab
+# 🚪 Location Transitions
 
-Purpose
+Locations are connected using doors, portals, terminals, or sector gateways.
 
-Teach players through interactive systems and coding-inspired challenges.
+Example:
 
-Player Actions
+```text
+Player approaches Developer Lab entrance
+        ↓
+Interaction prompt appears
+        ↓
+Press E
+        ↓
+Fade Out
+        ↓
+Load Developer Lab assets
+        ↓
+Spawn player at entrance
+        ↓
+Fade In
+```
 
-- Complete development missions
+---
+
+# 1. 🌐 Central Hub
+
+## Purpose
+
+The Central Hub is the heart of GTV Digital World and the main navigation map.
+
+## World Role
+
+It connects:
+
+- Mission Terminal
+- Developer Lab
+- Community Hall
+- Arcade
+
+## Player Actions
+
+- Walk around the plaza
+- Inspect locked sector entrances
+- Enter unlocked locations
+- View network restoration changes
+- Access Profile, Codex, and Settings through the HUD
+
+## Visual Direction
+
+- Futuristic digital plaza
+- Dark flooring
+- GTV orange pathways
+- Cyan holographic energy
+- Central network core
+- Sector entrances around the hub
+
+## Progression
+
+The Hub visually changes as the network is restored.
+
+Possible changes:
+
+- Lights activate
+- Doors become powered
+- Holograms appear
+- Network energy increases
+- Restored sectors gain color
+
+## Unlock Requirement
+
+Complete the Intro Story and Player Registration.
+
+---
+
+# 2. 🎯 Mission Terminal
+
+## Purpose
+
+The Mission Terminal is a small control room where the player receives and reviews main objectives.
+
+## Player Actions
+
+- Walk to the mission console
+- Interact with the console
+- Read current mission
+- Accept mission
+- Review rewards
+- Check network restoration progress
+- Return to the Central Hub
+
+## Important Objects
+
+- Mission Console
+- Network Status Display
+- Sector Map
+- Exit Door
+
+## Unlock Requirement
+
+Available immediately after entering the Central Hub.
+
+---
+
+# 3. 💻 Developer Lab
+
+## Purpose
+
+The Developer Lab introduces development-themed challenges and technical discovery.
+
+## Player Actions
+
+- Explore the laboratory
+- Inspect development equipment
+- Activate terminals
+- Complete coding-inspired challenges
+- Recover Network Fragments
 - Unlock Codex entries
-- Gain XP
 
-Unlock Requirement
+## Important Objects
 
-Mission 1 completed.
+- Development Terminal
+- Hologram Core
+- Server Rack
+- Workbench
+- Diagnostic Panel
+- Exit Door
 
----
+## Unlock Requirement
 
-# 6. Community Hall
-
-Purpose
-
-Introduce the GTV Community and its identity.
-
-Player Actions
-
-- Explore
-- Learn community information
-- Unlock achievements
-
-Unlock Requirement
-
-Mission 2 completed.
+Unlocked through mission progression.
 
 ---
 
-# 7. Arcade
+# 4. 🤝 Community Hall
 
-Purpose
+## Purpose
 
-Provide a short interactive mini-game for fun and progression.
+The Community Hall represents collaboration, creativity, and the GTV Community.
 
-Player Actions
+## Player Actions
 
-- Play mini-game
+- Explore the hall
+- Inspect community displays
+- Activate the communication system
+- Discover community information
+- Complete the restoration objective
+- Unlock achievements and Codex entries
+
+## Important Objects
+
+- Community Board
+- Communication Terminal
+- Hologram Display
+- Lounge Decorations
+- Resource Terminal
+- Exit Door
+
+## Unlock Requirement
+
+Unlocked after the required Developer Lab mission.
+
+---
+
+# 5. 🕹️ Arcade
+
+## Purpose
+
+The Arcade provides a short playable mini-game and restores the Entertainment Sector.
+
+## Player Actions
+
+- Explore the Arcade
+- Walk to the main machine
+- Start the mini-game
+- Complete the required score / objective
 - Earn XP
-- Unlock achievement
+- Unlock the Arcade achievement
+- Return to the Central Hub
 
-Unlock Requirement
+## Important Objects
 
-Mission 3 completed.
+- Main Arcade Machine
+- Score Display
+- Prize Decoration
+- Holographic Game Sign
+- Exit Door
 
----
+## Unlock Requirement
 
-# 8. Player Profile
-
-Purpose
-
-Display player progress.
-
-Player Actions
-
-- View Level
-- View XP
-- View Achievements
-- View Statistics
-
-Unlock Requirement
-
-Always available after entering the Hub.
+Unlocked after the required Community Hall mission.
 
 ---
 
-# 9. Codex
+# 📖 Non-Physical Systems
 
-Purpose
+The following are accessed through HTML/CSS interface overlays.
 
-Store every unlocked knowledge entry discovered during gameplay.
+## Player Profile
 
-Player Actions
+Displays:
 
-- Read entries
-- Track discoveries
+- Player Name
+- Level
+- XP
+- Achievements
+- Statistics
+- Network Restoration
 
-Unlock Requirement
+## Codex
 
-First Codex page unlocked after Developer Lab.
+Displays:
 
----
+- Technologies
+- Locations
+- Story
+- Community
+- Development Concepts
 
-# 10. Settings
+## Settings
 
-Purpose
-
-Allow players to customize the experience.
-
-Player Actions
+Controls:
 
 - Music Volume
 - Sound Volume
+- Controls
 - Reset Save
-- Theme (future-ready)
+- Return to Title
 
-Unlock Requirement
-
-Always available.
+These systems should not require the player to walk to a dedicated room.
 
 ---
 
-# 11. Ending
+# 🌟 Ending
 
-Purpose
+The Ending is not a normal explorable map.
 
-Celebrate restoring the GTV Network.
+When every required sector is restored:
 
-Player Actions
-
-- Watch final sequence
-- Continue to Credits
-
-Unlock Requirement
-
-Complete all main missions.
-
----
-
-# 12. Credits
-
-Purpose
-
-Recognize everyone and every resource that contributed to the project.
-
-Player Actions
-
-- View credits
-- Return to Title Screen
-
-Unlock Requirement
-
-Available after finishing the Ending.
-
----
-
-# Player Progression
-
-```
-Welcome
-      │
-      ▼
-Intro
-      │
-      ▼
-Hub
-      │
-      ▼
-Mission
-      │
-      ▼
-Developer Lab
-      │
-      ▼
-Community Hall
-      │
-      ▼
-Arcade
-      │
-      ▼
-Restore Network
-      │
-      ▼
-Ending
-      │
-      ▼
+```text
+Final Mission
+    ↓
+Core Synchronization
+    ↓
+Network Restoration 100%
+    ↓
+Ending Sequence
+    ↓
+Restored World Concept Illustration
+    ↓
 Credits
 ```
 
+The restored world artwork may be used as a cinematic final image rather than a playable environment.
+
 ---
 
-# Design Philosophy
+# 📦 Room Asset Structure
 
-Every location must satisfy at least one of the following:
+Playable rooms should be assembled from reusable pieces.
 
-- Advance the story
-- Unlock progression
-- Teach interaction
-- Reward exploration
-- Strengthen immersion
+Example:
 
-If a location serves none of these purposes, it should not exist.
+```text
+developer-lab/
+├── map-data.js
+├── floor/
+├── walls/
+├── furniture/
+├── terminals/
+├── decorations/
+├── animated/
+└── collision-data.js
+```
+
+The exact file structure may change during implementation.
+
+---
+
+# 🔄 World Progression
+
+```text
+Intro
+    ↓
+Central Hub
+    ↓
+Mission Terminal
+    ↓
+Developer Lab
+    ↓
+Community Hall
+    ↓
+Arcade
+    ↓
+Knowledge Recovery
+    ↓
+Core Synchronization
+    ↓
+Restored Network
+    ↓
+Ending
+```
+
+The Central Hub remains the main return point throughout the adventure.
+
+---
+
+# 🎨 Concept Art
+
+High-detail concept artwork is stored in:
+
+```text
+docs/references/concept-art/
+```
+
+These images are references for:
+
+- Color palettes
+- Mood
+- Architecture
+- Lighting
+- Location identity
+
+They are not required to be used as final gameplay backgrounds.
+
+---
+
+# 📌 World Design Principles
+
+1. Small maps are preferred over large empty maps.
+2. Every room must have gameplay purpose.
+3. Important objects must be visually readable.
+4. The player should always understand where exits are.
+5. New sectors should feel rewarding to unlock.
+6. The Hub should visibly evolve as the network is restored.
+7. Exploration should remain simple enough for a browser game.
 
 ---
 
