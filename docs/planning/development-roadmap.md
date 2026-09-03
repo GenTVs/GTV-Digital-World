@@ -15,7 +15,7 @@
 | Planning | ✅ Revised |
 | Concept Art | ✅ Complete |
 | Prototype Preparation | 🟡 In Progress |
-| Development | ⚪ Not Started |
+| Development | 🟡 In Progress |
 | Final Asset Production | ⚪ Not Started |
 | Testing | ⚪ Not Started |
 | Polish | ⚪ Not Started |
@@ -78,9 +78,9 @@ GTV Digital World is defined as a small top-down 2D pixel-art browser adventure 
 
 ## Prototype Placeholders
 
-- [ ] Temporary player sprite
-- [ ] Temporary floor tile
-- [ ] Temporary wall tile
+- [x] Temporary player sprite
+- [x] Temporary floor tile
+- [x] Temporary wall tile
 - [ ] Temporary door
 - [ ] Temporary terminal
 
@@ -92,19 +92,19 @@ GTV Digital World is defined as a small top-down 2D pixel-art browser adventure 
 
 # 🛠️ Phase 4 - Project Foundation
 
-- [ ] Initialize Vite
-- [ ] Configure Vite
-- [ ] Verify development server
-- [ ] Connect existing project folders
+- [x] Initialize Vite
+- [x] Configure Vite
+- [x] Verify development server
+- [x] Connect existing project folders
 - [ ] Create global CSS variables
 - [ ] Load local fonts
 - [ ] Load branding
-- [ ] Create main HTML structure
-- [ ] Create game Canvas
-- [ ] Configure pixelated Canvas scaling
+- [x] Create main HTML structure
+- [x] Create game Canvas
+- [x] Configure pixelated Canvas scaling
 - [ ] Create application state
-- [ ] Create game loop
-- [ ] Confirm Canvas renders successfully
+- [x] Create game loop
+- [x] Confirm Canvas renders successfully
 
 ### Milestone
 
@@ -134,8 +134,8 @@ Implementation order:
 
 ### First Playable Requirements
 
-- [ ] Move with WASD / Arrow Keys
-- [ ] Collide with walls
+- [x] Move with WASD / Arrow Keys
+- [x] Collide with walls
 - [ ] Approach a terminal
 - [ ] Press `E` to interact
 - [ ] Open an HTML/CSS interface

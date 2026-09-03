@@ -46,9 +46,9 @@
 
 # 🧪 PROTOTYPE ASSETS
 
-- [ ] Temporary player sprite / rectangle
-- [ ] Temporary floor tile
-- [ ] Temporary wall tile
+- [x] Temporary player sprite / rectangle
+- [x] Temporary floor tile
+- [x] Temporary wall tile
 - [ ] Temporary door
 - [ ] Temporary terminal
 - [ ] Temporary interactive object
@@ -59,23 +59,23 @@ Do not create final pixel art yet unless a specific asset is required to continu
 
 # 🛠️ PROJECT FOUNDATION
 
-- [ ] Initialize Vite
-- [ ] Configure Vite
-- [ ] Verify npm development server
-- [ ] Connect existing source structure
-- [ ] Create HTML game shell
-- [ ] Create Canvas
-- [ ] Configure Canvas dimensions
-- [ ] Configure `image-rendering: pixelated`
+- [x] Initialize Vite
+- [x] Configure Vite
+- [x] Verify npm development server
+- [x] Connect existing source structure
+- [x] Create HTML game shell
+- [x] Create Canvas
+- [x] Configure Canvas dimensions
+- [x] Configure `image-rendering: pixelated`
 - [ ] Create CSS variables
 - [ ] Create typography
 - [ ] Load Nunito
 - [ ] Load Dosis
 - [ ] Load branding
-- [ ] Create main JavaScript entry
+- [x] Create main JavaScript entry
 - [ ] Create application state
-- [ ] Create game loop
-- [ ] Draw first temporary object to Canvas
+- [x] Create game loop
+- [x] Draw first temporary object to Canvas
 
 ---
 
@@ -83,33 +83,33 @@ Do not create final pixel art yet unless a specific asset is required to continu
 
 ## Input
 
-- [ ] Detect keydown
-- [ ] Detect keyup
-- [ ] Support WASD
-- [ ] Support Arrow Keys
+- [x] Detect keydown
+- [x] Detect keyup
+- [x] Support WASD
+- [x] Support Arrow Keys
 - [ ] Add `E` interaction input
 - [ ] Add `Escape` close / cancel input
 
 ## Player
 
-- [ ] Create temporary player
-- [ ] Draw player
-- [ ] Move player
+- [x] Create temporary player
+- [x] Draw player
+- [x] Move player
 - [ ] Add facing direction
-- [ ] Add delta-time movement
+- [x] Add delta-time movement
 
 ## Room
 
-- [ ] Create temporary room
-- [ ] Draw floor
-- [ ] Draw walls
-- [ ] Add room boundaries
+- [x] Create temporary room
+- [x] Draw floor
+- [x] Draw walls
+- [x] Add room boundaries
 
 ## Collision
 
-- [ ] Prevent wall collision
-- [ ] Prevent object collision
-- [ ] Test room boundaries
+- [x] Prevent wall collision
+- [x] Prevent object collision
+- [x] Test room boundaries
 
 ## Interaction
 

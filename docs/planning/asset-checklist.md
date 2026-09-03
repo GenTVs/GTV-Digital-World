@@ -81,12 +81,12 @@ Temporary development assets may be:
 
 Required prototype assets:
 
-- [ ] Temporary player sprite
-- [ ] Temporary floor tile
-- [ ] Temporary wall tile
+- [x] Temporary player sprite
+- [x] Temporary floor tile
+- [x] Temporary wall tile
 - [ ] Temporary door
 - [ ] Temporary terminal
-- [ ] Temporary collision object
+- [x] Temporary collision object
 
 ---
 
