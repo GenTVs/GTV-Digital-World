@@ -84,8 +84,8 @@ Required prototype assets:
 - [x] Temporary player sprite
 - [x] Temporary floor tile
 - [x] Temporary wall tile
-- [ ] Temporary door
-- [ ] Temporary terminal
+- [x] Temporary door
+- [x] Temporary terminal
 - [x] Temporary collision object
 
 ---

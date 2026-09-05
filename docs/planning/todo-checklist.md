@@ -49,7 +49,7 @@
 - [x] Temporary player sprite / rectangle
 - [x] Temporary floor tile
 - [x] Temporary wall tile
-- [ ] Temporary door
+- [x] Temporary door
 - [ ] Temporary terminal
 - [ ] Temporary interactive object
 
@@ -87,8 +87,8 @@ Do not create final pixel art yet unless a specific asset is required to continu
 - [x] Detect keyup
 - [x] Support WASD
 - [x] Support Arrow Keys
-- [ ] Add `E` interaction input
-- [ ] Add `Escape` close / cancel input
+- [x] Add `E` interaction input
+- [x] Add `Escape` close / cancel input
 
 ## Player
 
@@ -113,39 +113,39 @@ Do not create final pixel art yet unless a specific asset is required to continu
 
 ## Interaction
 
-- [ ] Create terminal
-- [ ] Detect interaction range
-- [ ] Show `[E] Interact`
-- [ ] Press E to activate terminal
-- [ ] Open temporary HTML/CSS panel
-- [ ] Close panel and resume gameplay
+- [x] Create terminal
+- [x] Detect interaction range
+- [x] Show `[E] Interact`
+- [x] Press E to activate terminal
+- [x] Open temporary HTML/CSS panel
+- [x] Close panel and resume gameplay
 
 ## Room Transition
 
-- [ ] Create door
-- [ ] Detect door interaction
-- [ ] Create second temporary room
-- [ ] Fade out
-- [ ] Load destination
-- [ ] Spawn player
-- [ ] Fade in
-- [ ] Return to first room
+- [x] Create door
+- [x] Detect door interaction
+- [x] Create second temporary room
+- [x] Fade out
+- [x] Load destination
+- [x] Spawn player
+- [x] Fade in
+- [x] Return to first room
 
 ## Loading
 
-- [ ] Create asset loader
-- [ ] Create loading progress state
-- [ ] Create loading overlay
-- [ ] Load destination bundle
-- [ ] Cache loaded assets
-- [ ] Test background preloading
+- [x] Create asset loader
+- [x] Create loading progress state
+- [x] Create loading overlay
+- [x] Load destination bundle
+- [x] Cache loaded assets
+- [x] Test background preloading
 
 ---
 
 # 🏆 FIRST PLAYABLE MILESTONE
 
 ```text
-[ ] PLAYER CAN MOVE, COLLIDE, INTERACT, AND CHANGE ROOMS
+[x] PLAYER CAN MOVE, COLLIDE, INTERACT, AND CHANGE ROOMS
 ```
 
 Do not begin large-scale final asset production until this milestone works reliably.

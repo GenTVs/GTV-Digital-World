@@ -14,7 +14,7 @@
 | Blueprint | ✅ Revised |
 | Planning | ✅ Revised |
 | Concept Art | ✅ Complete |
-| Prototype Preparation | 🟡 In Progress |
+| Prototype Preparation | ✅ Complete |
 | Development | 🟡 In Progress |
 | Final Asset Production | ⚪ Not Started |
 | Testing | ⚪ Not Started |
@@ -81,8 +81,8 @@ GTV Digital World is defined as a small top-down 2D pixel-art browser adventure 
 - [x] Temporary player sprite
 - [x] Temporary floor tile
 - [x] Temporary wall tile
-- [ ] Temporary door
-- [ ] Temporary terminal
+- [x] Temporary door
+- [x] Temporary terminal
 
 ### Milestone
 
@@ -136,13 +136,13 @@ Implementation order:
 
 - [x] Move with WASD / Arrow Keys
 - [x] Collide with walls
-- [ ] Approach a terminal
-- [ ] Press `E` to interact
-- [ ] Open an HTML/CSS interface
-- [ ] Approach a door
-- [ ] Transition to another room
-- [ ] See a loading screen if required
-- [ ] Return to the original room
+- [x] Approach a terminal
+- [x] Press `E` to interact
+- [x] Open an HTML/CSS interface
+- [x] Approach a door
+- [x] Transition to another room
+- [x] See a loading screen if required
+- [x] Return to the original room
 
 ### Milestone
 
