@@ -154,15 +154,15 @@ Do not begin large-scale final asset production until this milestone works relia
 
 # ⚙️ CORE SYSTEMS
 
-- [ ] Input System
-- [ ] Rendering System
-- [ ] Player Movement System
-- [ ] Collision System
-- [ ] Room / Map System
-- [ ] Interaction System
-- [ ] Transition System
-- [ ] Asset Loading System
-- [ ] State Management
+- [x] Input System
+- [x] Rendering System
+- [x] Player Movement System
+- [x] Collision System
+- [x] Room / Map System
+- [x] Interaction System
+- [x] Transition System
+- [x] Asset Loading System
+- [x] State Management
 - [ ] Save System
 - [ ] Player Profile System
 - [ ] Mission System

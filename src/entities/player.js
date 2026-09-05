@@ -1,0 +1,1 @@
+export const player = { x: 154, y: 84, width: 12, height: 12, speed: 60 };
